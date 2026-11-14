@@ -1,13 +1,13 @@
 # 服务器猜数字
 
-浏览器提交一个整数，Flask 判定偏大、偏小或猜中。先看 [Issue](ISSUE.md)，再以固定谜底 `42` 启动服务。
+浏览器提交一个整数，Flask 判定偏大、偏小或猜中。服务每次启动时随机选一个 1 到 100 的整数，同一次运行中一直使用这个谜底。要按固定输入验收修复，见 [Issue](ISSUE.md)。
 
 在 Remote - SSH 窗口打开本目录，在远端 Linux 终端运行：
 
 ```bash
 python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements.txt
-GUESS_TARGET=42 .venv/bin/python app.py
+.venv/bin/python app.py
 ```
 
 在 VS Code 的 Ports 面板转发远端端口 `5000`，在本机浏览器打开面板显示的地址。改动 Python 后停止并重新启动服务，再用同一地址验证。

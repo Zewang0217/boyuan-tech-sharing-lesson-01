@@ -35,12 +35,23 @@
 
 ## 开源项目如何处理 Issue 与 PR
 
+- [开源的定义](https://opensource.org/osd)
+- [什么是 GitHub](https://docs.github.com/en/get-started/start-your-journey/what-is-github)
+- [GitHub Issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/learning-about-issues/about-issues)
+- [Pull requests](https://docs.github.com/en/pull-requests/reference/pull-requests)
+
+
 - [VS Code 贡献入口](https://github.com/microsoft/vscode/blob/main/CONTRIBUTING.md) · [贡献指南](https://github.com/microsoft/vscode/wiki/How-to-Contribute)。报 bug 前查重，给出运行环境、复现步骤和预期与实际结果。
 - [CPython 的 PR 生命周期](https://devguide.python.org/getting-started/pull-request-lifecycle/)。确认问题、开分支、验证改动和提交 PR。
 - [Vite 贡献指南](https://github.com/vitejs/vite/blob/main/CONTRIBUTING.md)。处理 bug 时准备最小复现，讨论功能时先写清楚动机和使用场景。
 - [GitHub 如何关联 PR 和 Issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/linking-a-pull-request-to-an-issue)。查看何时可用 `Fixes #编号` 在合入后关闭 Issue。
 - Vue 的最小复现、修复和回归测试。[Issue #15495](https://github.com/vuejs/core/issues/15495) · [PR #15498](https://github.com/vuejs/core/pull/15498)
 - Flask 的边界用例与修复。[Issue #6093](https://github.com/pallets/flask/issues/6093) · [PR #6096](https://github.com/pallets/flask/pull/6096)
+
+## 环境问题案例
+
+- [Werkzeug Issue #2789](https://github.com/pallets/werkzeug/issues/2789)。Flask 2.2.2 搭配 Werkzeug 3.0.0 时，导入 Flask 就会失败。报告里的三个版本和最小复现帮助维护者定位了兼容性问题。
+- [Vite 讨论 #20286](https://github.com/vitejs/vite/discussions/20286) · [Vite 7 的运行时要求](https://vite.dev/blog/announcing-vite7#node-js-support)。新建项目在 Node.js 20.9.0 上报错，Vite 7 官方要求 Node.js 20.19+ 或 22.12+。
 
 ## 课后延伸
 
