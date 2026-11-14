@@ -6,8 +6,14 @@
 
 | 练习 | 场景 | 从这里开始 |
 | --- | --- | --- |
-| 红灯绿灯反应测试 | 在本机浏览器复现计时问题，沿按钮事件追到回合逻辑 | [练习任务](reaction/ISSUE.md) |
-| 服务器猜数字 | 在远程 VS Code 中排查判定逻辑，从本机浏览器验证回复 | [练习任务](guess/ISSUE.md) |
+| 红灯绿灯反应测试 | 在本机浏览器复现计时问题，沿按钮事件追到回合逻辑 | [项目说明](reaction/README.md) · [练习任务](reaction/ISSUE.md) |
+| 服务器猜数字 | 在远程 VS Code 中排查判定逻辑，从本机浏览器验证回复 | [项目说明](guess/README.md) · [练习任务](guess/ISSUE.md) |
+
+在 VS Code 中打开仓库根目录可浏览所有文件。打开 [games.code-workspace](games.code-workspace) 可将两个项目作为独立目录并排展示。
+
+## VS Code 编辑练习
+
+在 VS Code 打开仓库根目录，找到 [test/exercise/editing-practice.js](test/exercise/editing-practice.js)。把内容复制到新建的 JavaScript 编辑器，再练习多光标、上下移行、复制整行、删除整行和格式化。底稿故意保留了错乱的缩进，演示结束后关闭副本即可。
 
 ## 运行反应测试
 

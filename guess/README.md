@@ -1,0 +1,22 @@
+# 服务器猜数字
+
+浏览器提交一个整数，Flask 判定偏大、偏小或猜中。先看 [Issue](ISSUE.md)，再以固定谜底 `42` 启动服务。
+
+在 Remote - SSH 窗口打开本目录，在远端 Linux 终端运行：
+
+```bash
+python3 -m venv .venv
+.venv/bin/python -m pip install -r requirements.txt
+GUESS_TARGET=42 .venv/bin/python app.py
+```
+
+在 VS Code 的 Ports 面板转发远端端口 `5000`，在本机浏览器打开面板显示的地址。改动 Python 后停止并重新启动服务，再用同一地址验证。
+
+| 文件 | 作用 |
+| --- | --- |
+| index.html | 显示表单和判定结果 |
+| app.py | 处理首页和提交请求，调用判定函数 |
+| guess_rules.py | 根据玩家输入和谜底生成提示 |
+| requirements.txt | 声明 Python 依赖 |
+
+想沿表单追到判定函数，打开[代码地图](docs/code-map.md)。

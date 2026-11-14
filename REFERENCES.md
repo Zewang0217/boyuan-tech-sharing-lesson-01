@@ -7,6 +7,7 @@
 - [工作区](https://code.visualstudio.com/docs/editing/workspaces/workspaces)解释打开文件夹和多根工作区。
 - [默认快捷键](https://code.visualstudio.com/docs/reference/default-keybindings) · [Windows 一页速查表](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
 - [集成终端](https://code.visualstudio.com/docs/terminal/basics) · [终端字体与外观](https://code.visualstudio.com/docs/terminal/appearance)
+- [VS Code Markdown](https://code.visualstudio.com/docs/languages/markdown)介绍内置预览。
 
 ## 查找、跨文件跳转和编辑
 
@@ -31,6 +32,15 @@
 - [Remote - SSH](https://code.visualstudio.com/docs/remote/ssh)介绍连接远端、打开文件夹和安装远端扩展。
 - [Ports 与端口转发](https://code.visualstudio.com/docs/remote/ssh#_forwarding-a-port--creating-ssh-tunnel)说明如何从本机浏览器访问远端服务。
 - [GNU nano 手册](https://www.nano-editor.org/dist/latest/nano.html) · [Vim 入门](https://vimhelp.org/usr_02.txt.html)
+
+## 开源项目如何处理 Issue 与 PR
+
+- [VS Code 贡献入口](https://github.com/microsoft/vscode/blob/main/CONTRIBUTING.md) · [贡献指南](https://github.com/microsoft/vscode/wiki/How-to-Contribute)。报 bug 前查重，给出运行环境、复现步骤和预期与实际结果。
+- [CPython 的 PR 生命周期](https://devguide.python.org/getting-started/pull-request-lifecycle/)。确认问题、开分支、验证改动和提交 PR。
+- [Vite 贡献指南](https://github.com/vitejs/vite/blob/main/CONTRIBUTING.md)。处理 bug 时准备最小复现，讨论功能时先写清楚动机和使用场景。
+- [GitHub 如何关联 PR 和 Issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/linking-a-pull-request-to-an-issue)。查看何时可用 `Fixes #编号` 在合入后关闭 Issue。
+- Vue 的最小复现、修复和回归测试。[Issue #15495](https://github.com/vuejs/core/issues/15495) · [PR #15498](https://github.com/vuejs/core/pull/15498)
+- Flask 的边界用例与修复。[Issue #6093](https://github.com/pallets/flask/issues/6093) · [PR #6096](https://github.com/pallets/flask/pull/6096)
 
 ## 课后延伸
 
