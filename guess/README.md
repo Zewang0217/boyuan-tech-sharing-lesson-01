@@ -6,9 +6,14 @@
 
 ```bash
 python3 -m venv .venv
-.venv/bin/python -m pip install -r requirements.txt
-.venv/bin/python app.py
+source .venv/bin/activate
+pip install -r requirements.txt
+python app.py
 ```
+
+激活后提示符前出现 `(.venv)`，之后 `python` 和 `pip` 都是这个环境里的，`deactivate` 退出。也可以不激活，写全路径 `.venv/bin/python app.py`。装了 [uv](https://docs.astral.sh/uv/) 就用 `uv venv`、`uv pip install -r requirements.txt`、`uv run app.py`。
+
+服务启动时从 1 到 100 随机选一个谜底，同一次运行里不变。要固定谜底复测，启动时加 `GUESS_TARGET=42`，例如 `GUESS_TARGET=42 python app.py`。
 
 在 VS Code 的 Ports 面板转发远端端口 `5000`，在本机浏览器打开面板显示的地址。改动 Python 后停止并重新启动服务，再用同一地址验证。
 
